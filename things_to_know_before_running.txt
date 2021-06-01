@@ -1,0 +1,29 @@
+Run postman 
+
+post: http://0.0.0.0:5000/collect
+
+with the following JSON input
+write you query where "engineer" is written these inverted commas contain
+the job post using which we are searching.
+
+in postman click on "body"
+then "raw" choose "json"
+then write this
+
+{
+
+	"querydocument":"engineer"
+
+}
+
+OR
+
+{
+    "querydocument":"Barbara J. Hawkins Computer Engineer Specializing in Embedded Systems barbara.hawkins@gmail.com (513) 952-5653 linkedin.com/in/barbarahawkins Summary of Qualifications Detail-oriented computer engineer with 5+ years of expertise working with embedded systems, artificial intelligence, machine learning, and automation technologies."
+}
+
+To see the results
+
+get: http://0.0.0.0:5000/cvs
+
+this will show you the returned cvs
